@@ -1,21 +1,23 @@
 #pragma once
-#include <iostream>
 
 class Stack
 {
 private:
 	 int* arr;
-	 unsigned int head = 0;
+	 unsigned int head = 0, size = 0;
 
 public:
 
 	Stack(unsigned int size) {
 		arr = new int[size];
+		this->size = size;
 	}
 
 	void Push(int val) {
-		arr[head] = val;
-		head++;
+		if (head < size) {
+			arr[head] = val;
+			head++;
+		}
 	}
 
 	int Pop() {

@@ -3,16 +3,19 @@ class Queue
 {
 private:
 	int* arr;
-	unsigned int head = 0, tail = 0;
+	unsigned int head = 0, tail = 0, size = 0;
 
 public:
 	Queue(unsigned int size) {
 		arr = new int[size];
+		this->size = size;
 	}
 
 	void Push(int val) {
-		arr[tail] = val;
-		tail++;
+		if (tail < size) {
+			arr[tail] = val;
+			tail++;
+		}
 	}
 
 	int Pop() {

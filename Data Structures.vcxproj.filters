@@ -22,5 +22,8 @@
     <ClInclude Include="Queue.h">
       <Filter>DataTypes</Filter>
     </ClInclude>
+    <ClInclude Include="LinkedList.h">
+      <Filter>DataTypes</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
