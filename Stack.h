@@ -3,8 +3,8 @@
 class Stack
 {
 private:
-	 int* arr;
-	 unsigned int head = 0, size = 0;
+	int* arr;
+	unsigned int head = 0, size = 0;
 
 public:
 
@@ -33,4 +33,3 @@ public:
 		}
 	}
 };
-

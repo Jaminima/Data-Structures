@@ -21,7 +21,7 @@ public:
 	int Pop() {
 		if (tail > head) {
 			head++;
-			return arr[head-1];
+			return arr[head - 1];
 		}
 	}
 
@@ -31,4 +31,3 @@ public:
 		}
 	}
 };
-

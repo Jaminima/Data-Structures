@@ -29,6 +29,15 @@ public:
 		return Head;
 	}
 
+	void RemoveAt(unsigned int pos) {
+		LinkedListItem* i = Head;
+		for (; pos > 1; pos--) {
+			i = i->next;
+		}
+		i->next = i->next->next;
+		size--;
+	}
+
 	int ValueAt(unsigned int pos) {
 		LinkedListItem* i = Head;
 		for (; pos > 0; pos--) {

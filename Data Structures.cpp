@@ -16,7 +16,9 @@ int main()
 	LinkedList l;
 	l.Add(1);
 	l.Add(2);
+	l.Add(3);
 
 	auto l1 = l.ValueAt(0);
+	l.RemoveAt(1);
 	auto l2 = l.ValueAt(1);
 }
