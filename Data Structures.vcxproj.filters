@@ -19,5 +19,8 @@
     <ClInclude Include="Stack.h">
       <Filter>DataTypes</Filter>
     </ClInclude>
+    <ClInclude Include="Queue.h">
+      <Filter>DataTypes</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
